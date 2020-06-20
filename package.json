@@ -1,6 +1,7 @@
 {
   "name": "keeper-part-3-starting",
   "version": "1.0.0",
+  "homepage": "https://robo-nic.github.io/keeper/",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
@@ -19,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
